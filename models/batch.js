@@ -5,6 +5,7 @@ const batchSchema = new mongoose.Schema({
     type: Number,
     unique: true,
     required: true,
+    min: 1
   },
   size: {
     type: String,
@@ -19,6 +20,7 @@ const batchSchema = new mongoose.Schema({
   quantity: {
     type: Number,
     required: true,
+    min: 1
   },
 });
 
